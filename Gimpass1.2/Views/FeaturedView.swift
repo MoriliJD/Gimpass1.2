@@ -8,7 +8,10 @@
 import SwiftUI
 
 struct FeaturedView: View {
-    @State var isDetailViewShowing = false
+    @State var isDetailViewShowing1 = false
+    @State var isDetailViewShowing2 = false
+    @State var isDetailViewShowing3 = false
+    @State var isDetailViewShowing4 = false
     @State var tabSelectionIndex = 0
     var body: some View {
         VStack {
@@ -22,7 +25,7 @@ struct FeaturedView: View {
             GeometryReader {geo in
                 TabView(selection: $tabSelectionIndex) {
                     // MARK: button1
-                    Button(action:{self.isDetailViewShowing = true} , label:{ ZStack {
+                    Button(action:{self.isDetailViewShowing1 = true} , label:{ ZStack {
                         Rectangle()
                             .foregroundColor(.white)
                         ZStack {
@@ -40,7 +43,7 @@ struct FeaturedView: View {
                         }
                     }})
                     .tag(0)
-                    .sheet(isPresented: $isDetailViewShowing) {
+                    .sheet(isPresented: $isDetailViewShowing1) {
                         // Show the Recipe Detail View
                        CardView1()
                     }
@@ -50,7 +53,7 @@ struct FeaturedView: View {
                     .shadow(color: Color(.sRGB, red: 0, green: 0, blue: 0, opacity: 0.5), radius: 5, x: -5, y: 5)
 
                     // MARK: button2
-                    Button(action:{self.isDetailViewShowing = true} , label:{ ZStack {
+                    Button(action:{self.isDetailViewShowing2 = true} , label:{ ZStack {
                         Rectangle()
                             .foregroundColor(.white)
                         ZStack{
@@ -68,9 +71,9 @@ struct FeaturedView: View {
                         }
                     }})
                     .tag(1)
-                    .sheet(isPresented: $isDetailViewShowing) {
-                        // Show the Recipe Detail View
-                       CardView1()
+                    .sheet(isPresented: $isDetailViewShowing2) {
+                  
+                       CardView2()
                     }
                     .buttonStyle(PlainButtonStyle())
                     .frame(width: geo.size.width - 30, height: geo.size.height - 20, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
@@ -78,7 +81,7 @@ struct FeaturedView: View {
                     .shadow(color: Color(.sRGB, red: 0, green: 0, blue: 0, opacity: 0.5), radius: 5, x: -5, y: 5)
                     
                     // MARK: button3
-                    Button(action:{self.isDetailViewShowing = true} , label:{ ZStack {
+                    Button(action:{self.isDetailViewShowing3 = true} , label:{ ZStack {
                         Rectangle()
                             .foregroundColor(.white)
                         ZStack{
@@ -86,7 +89,7 @@ struct FeaturedView: View {
                                 .resizable()
                                 .aspectRatio(contentMode: .fill)
                                 .clipped()
-                            Text("Gifted Education")
+                            Text("Local Practices")
                                 .font(.title)
                                 .fontWeight(.heavy)
                                 .fontWeight(.ultraLight)
@@ -96,9 +99,9 @@ struct FeaturedView: View {
                         }
                     }})
                     .tag(2)
-                    .sheet(isPresented: $isDetailViewShowing) {
+                    .sheet(isPresented: $isDetailViewShowing3) {
                         // Show the Recipe Detail View
-                       CardView1()
+                       CardView3()
                     }
                     .buttonStyle(PlainButtonStyle())
                     .frame(width: geo.size.width - 30, height: geo.size.height - 20, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
@@ -107,7 +110,7 @@ struct FeaturedView: View {
                     
                     // MARK: button3
                     
-                    Button(action:{self.isDetailViewShowing = true} , label:{ ZStack {
+                    Button(action:{self.isDetailViewShowing4 = true} , label:{ ZStack {
                         Rectangle()
                             .foregroundColor(.white)
                         ZStack {
@@ -115,7 +118,7 @@ struct FeaturedView: View {
                                 .resizable()
                                 .aspectRatio(contentMode: .fill)
                                 .clipped()
-                            Text("Gifted Education")
+                            Text("Global Resources")
                                 .font(.title)
                                 .fontWeight(.heavy)
                                 .fontWeight(.ultraLight)
@@ -125,9 +128,9 @@ struct FeaturedView: View {
                         }
                     }})
                     .tag(3)
-                    .sheet(isPresented: $isDetailViewShowing) {
+                    .sheet(isPresented: $isDetailViewShowing4) {
                         // Show the Recipe Detail View
-                       CardView1()
+                       CardView4()
                     }
                     .buttonStyle(PlainButtonStyle())
                     .frame(width: geo.size.width - 30, height: geo.size.height - 20, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
@@ -137,6 +140,7 @@ struct FeaturedView: View {
                 .tabViewStyle(PageTabViewStyle(indexDisplayMode: .automatic))
                 .indexViewStyle(PageIndexViewStyle(backgroundDisplayMode: .always))
             }
+            // MARK: Descriptions
             VStack (alignment: .leading, spacing: 10) {
                 
                 Text("Gimpass is for educators and parents")

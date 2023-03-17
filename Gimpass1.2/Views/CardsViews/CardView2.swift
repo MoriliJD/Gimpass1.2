@@ -1,5 +1,5 @@
 //
-//  CardView1.swift
+//  CardView2.swift
 //  Gimpass1.2
 //
 //  Created by MORI on 2023/3/17.
@@ -7,19 +7,19 @@
 
 import SwiftUI
 
-struct CardView1: View {
+struct CardView2: View {
     var body: some View {
         ScrollView {
         
             VStack (alignment: .leading) {
                 
                 // MARK: Recipe Image
-                Image("IMG1")
+                Image("IMG2")
                     .resizable()
                     .scaledToFill()
                 
                 // MARK: Recipe title
-                Text("Giftedness")
+                Text("Gifted Education")
                     .bold()
                     .padding(.top, 20)
                     .padding(.leading)
@@ -31,7 +31,7 @@ struct CardView1: View {
                 
                 // MARK: Ingredients
                 VStack(alignment: .leading) {
-                    Text("What is giftedness:")
+                    Text("What is Gifted Education:")
                         .font(.headline)
                         .padding([.bottom, .top], 5)
                 }
@@ -42,7 +42,7 @@ struct CardView1: View {
                 
                 // MARK: Directions
                 VStack(alignment: .leading) {
-                    Text("Myth or fact:")
+                    Text("Why need Gifted Education:")
                         .font(.headline)
                         .padding([.bottom, .top], 5)
                 }
@@ -62,8 +62,8 @@ struct CardView1: View {
     }
 }
 
-struct CardView1_Previews: PreviewProvider {
+struct CardView2_Previews: PreviewProvider {
     static var previews: some View {
-        CardView1()
+        CardView2()
     }
 }

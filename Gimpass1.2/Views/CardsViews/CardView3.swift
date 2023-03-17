@@ -1,5 +1,5 @@
 //
-//  CardView1.swift
+//  CardView3.swift
 //  Gimpass1.2
 //
 //  Created by MORI on 2023/3/17.
@@ -7,31 +7,28 @@
 
 import SwiftUI
 
-struct CardView1: View {
+struct CardView3: View {
     var body: some View {
         ScrollView {
-        
+            
             VStack (alignment: .leading) {
                 
                 // MARK: Recipe Image
-                Image("IMG1")
+                Image("IMG3")
                     .resizable()
                     .scaledToFill()
                 
                 // MARK: Recipe title
-                Text("Giftedness")
+                Text("Local Practice")
                     .bold()
                     .padding(.top, 20)
                     .padding(.leading)
                     .font(.largeTitle)
                 
                 
-                // MARK: Serving size picker
-               
-                
                 // MARK: Ingredients
                 VStack(alignment: .leading) {
-                    Text("What is giftedness:")
+                    Text("Hong Kong:")
                         .font(.headline)
                         .padding([.bottom, .top], 5)
                 }
@@ -42,7 +39,7 @@ struct CardView1: View {
                 
                 // MARK: Directions
                 VStack(alignment: .leading) {
-                    Text("Myth or fact:")
+                    Text("Macao:")
                         .font(.headline)
                         .padding([.bottom, .top], 5)
                 }
@@ -50,20 +47,28 @@ struct CardView1: View {
                 
                 // MARK: Divider
                 Divider()
+                
                 VStack(alignment: .leading) {
-                    Text("References:")
+                    Text("    Mainland China:")
                         .font(.headline)
                         .padding([.bottom, .top], 5)
+                    // MARK: Divider
+                    Divider()
+                    VStack(alignment: .leading) {
+                        Text("References:")
+                            .font(.headline)
+                            .padding([.bottom, .top], 5)
+                    }
+                    .padding(.horizontal)
                 }
-                .padding(.horizontal)
+                
             }
-            
         }
     }
-}
-
-struct CardView1_Previews: PreviewProvider {
-    static var previews: some View {
-        CardView1()
+    
+    struct CardView3_Previews: PreviewProvider {
+        static var previews: some View {
+            CardView3()
+        }
     }
 }

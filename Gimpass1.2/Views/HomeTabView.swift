@@ -9,13 +9,24 @@ import SwiftUI
 
 struct HomeTabView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        TabView {
+            
+            FeaturedView()
+                .tabItem {
+                    VStack {
+                        Image(systemName: "star.fill")
+                        Text("Home")
+                    }
+                }
+            
+           ListView()
+                .tabItem {
+                    VStack {
+                        Image(systemName: "list.bullet")
+                        Text("Details")
+                    }
+                }
         }
-        .padding()
     }
 }
 
