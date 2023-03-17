@@ -10,7 +10,7 @@ import SwiftUI
 struct HomeTabView: View {
     var body: some View {
         TabView {
-            FeaturedView()
+                FeaturedView()
                 .tabItem {
                     VStack {
                         Image(systemName: "star.fill")
@@ -27,6 +27,7 @@ struct HomeTabView: View {
         }
     }
 }
+
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         HomeTabView()

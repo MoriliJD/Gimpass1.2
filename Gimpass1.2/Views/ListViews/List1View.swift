@@ -90,7 +90,7 @@ struct List1View: View {
                                     .shadow(radius: 5)
                                     .aspectRatio(CGSize(width: 350, height: 300), contentMode:.fill)
                                     .padding(.horizontal)
-                                Text("Three-Rings Concept")
+                                Text("Theory of Multiple Intelligences")
                                     .font(.title2)
                                     .foregroundColor(.white)
                                     .bold()
