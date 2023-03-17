@@ -38,7 +38,7 @@ struct FeaturedView: View {
                                 .fontWeight(.heavy)
                                 .fontWeight(.ultraLight)
                                 .padding(5)
-                                .foregroundColor(.white)
+                                .foregroundColor(.black)
                                 .bold()
                         }
                     }})

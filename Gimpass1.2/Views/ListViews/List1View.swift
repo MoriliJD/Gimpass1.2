@@ -9,7 +9,7 @@ import SwiftUI
 
 struct List1View: View {
     var body: some View {
-        NavigationView {
+        
             ScrollView {
                 VStack {
                     Text("Three Theories")
@@ -25,7 +25,7 @@ struct List1View: View {
                                 .foregroundColor(.white)
                                 .cornerRadius(10)
                                 .shadow(radius: 5)
-                                .aspectRatio(CGSize(width: 350, height: 300), contentMode: .fit)
+                                .aspectRatio(CGSize(width: 350, height: 300), contentMode:.fill)
                                 .padding(.horizontal)
                             ZStack{
                                 Image("IMG1")
@@ -36,7 +36,7 @@ struct List1View: View {
                                     .padding(.horizontal)
                                 Text("Three-Rings Concept")
                                     .font(.title2)
-                                    .foregroundColor(.white)
+                                    .foregroundColor(.black)
                                     .bold()
                             }
 
@@ -100,7 +100,7 @@ struct List1View: View {
                     }
                 }
             }
-        }
+        
     }
         
 }
