@@ -21,6 +21,9 @@
 		8DF63C5E29C445E400A09EFB /* List2View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DF63C5D29C445E400A09EFB /* List2View.swift */; };
 		8DF63C6029C445F200A09EFB /* List3View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DF63C5F29C445F200A09EFB /* List3View.swift */; };
 		8DF63C6229C445FF00A09EFB /* List4View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DF63C6129C445FF00A09EFB /* List4View.swift */; };
+		8DF63C6529C44C4700A09EFB /* ThreeRingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DF63C6429C44C4700A09EFB /* ThreeRingsView.swift */; };
+		8DF63C6729C44C5700A09EFB /* GagneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DF63C6629C44C5700A09EFB /* GagneView.swift */; };
+		8DF63C6929C44C6400A09EFB /* MIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DF63C6829C44C6400A09EFB /* MIView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +42,9 @@
 		8DF63C5D29C445E400A09EFB /* List2View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = List2View.swift; sourceTree = "<group>"; };
 		8DF63C5F29C445F200A09EFB /* List3View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = List3View.swift; sourceTree = "<group>"; };
 		8DF63C6129C445FF00A09EFB /* List4View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = List4View.swift; sourceTree = "<group>"; };
+		8DF63C6429C44C4700A09EFB /* ThreeRingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreeRingsView.swift; sourceTree = "<group>"; };
+		8DF63C6629C44C5700A09EFB /* GagneView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GagneView.swift; sourceTree = "<group>"; };
+		8DF63C6829C44C6400A09EFB /* MIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MIView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,12 +119,23 @@
 		8DF63C5829C435D300A09EFB /* ListViews */ = {
 			isa = PBXGroup;
 			children = (
+				8DF63C6329C44C2300A09EFB /* DetailViews */,
 				8DF63C5B29C4445400A09EFB /* List1View.swift */,
 				8DF63C5D29C445E400A09EFB /* List2View.swift */,
 				8DF63C5F29C445F200A09EFB /* List3View.swift */,
 				8DF63C6129C445FF00A09EFB /* List4View.swift */,
 			);
 			path = ListViews;
+			sourceTree = "<group>";
+		};
+		8DF63C6329C44C2300A09EFB /* DetailViews */ = {
+			isa = PBXGroup;
+			children = (
+				8DF63C6429C44C4700A09EFB /* ThreeRingsView.swift */,
+				8DF63C6629C44C5700A09EFB /* GagneView.swift */,
+				8DF63C6829C44C6400A09EFB /* MIView.swift */,
+			);
+			path = DetailViews;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -193,8 +210,11 @@
 			files = (
 				8DF63C5A29C435EC00A09EFB /* ListView.swift in Sources */,
 				8DF63C6229C445FF00A09EFB /* List4View.swift in Sources */,
+				8DF63C6529C44C4700A09EFB /* ThreeRingsView.swift in Sources */,
 				8DF63C5E29C445E400A09EFB /* List2View.swift in Sources */,
 				8DF63C5029C4257400A09EFB /* FeaturedView.swift in Sources */,
+				8DF63C6729C44C5700A09EFB /* GagneView.swift in Sources */,
+				8DF63C6929C44C6400A09EFB /* MIView.swift in Sources */,
 				8DF63C4E29C4233F00A09EFB /* CardView1.swift in Sources */,
 				8DF63C3E29C4227800A09EFB /* HomeTabView.swift in Sources */,
 				8DF63C3C29C4227800A09EFB /* Gimpass1_2App.swift in Sources */,

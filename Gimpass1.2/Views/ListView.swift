@@ -11,6 +11,13 @@ struct ListView: View {
     var body: some View {
         NavigationView {
             ScrollView {
+                Text("Get started")
+                    .font(/*@START_MENU_TOKEN@*/.largeTitle/*@END_MENU_TOKEN@*/)
+                    .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
+                    .foregroundColor(.black)
+                    .multilineTextAlignment(.leading)
+                    .padding([.top, .trailing])
+                    
                 VStack{
                     Spacer()
                     Text(" ")
@@ -41,7 +48,8 @@ struct ListView: View {
                                     Text("Theories ")
                                         .bold()
                                     // Description
-                                    Text("three theories of giftedness")
+                                    Text("- three theories of giftedness")
+                                        .multilineTextAlignment(.leading)
                                         .padding(.bottom, 20)
                                         .font(.caption)
                                     
@@ -83,7 +91,8 @@ struct ListView: View {
                                     Text("Identification")
                                         .bold()
                                     // Description
-                                    Text("How to identify gifted students and gifted behavior")
+                                    Text("- How to identify gifted students and gifted behavior")
+                                        .multilineTextAlignment(.leading)
                                         .padding(.bottom, 20)
                                         .font(.caption)
                                     
@@ -125,7 +134,8 @@ struct ListView: View {
                                     Text("Special Needs")
                                         .bold()
                                     // Description
-                                    Text("How to meet gifted students needs")
+                                    Text("- How to meet gifted students needs")
+                                        .multilineTextAlignment(.leading)
                                         .padding(.bottom, 20)
                                         .font(.caption)
                                     
@@ -168,7 +178,8 @@ struct ListView: View {
                                     Text("Motivation")
                                         .bold()
                                     // Description
-                                    Text("How to motivate gifted students")
+                                    Text("- How to motivate gifted students")
+                                        .multilineTextAlignment(.leading)
                                         .padding(.bottom, 20)
                                         .font(.caption)
                                     
