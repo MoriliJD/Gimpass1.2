@@ -100,11 +100,8 @@ struct List1View: View {
                     }
                 }
             }
-        
-    }
-        
+    }        
 }
-
 struct List1View_Previews: PreviewProvider {
     static var previews: some View {
         List1View()

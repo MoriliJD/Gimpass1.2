@@ -119,11 +119,11 @@
 		8DF63C5829C435D300A09EFB /* ListViews */ = {
 			isa = PBXGroup;
 			children = (
-				8DF63C6329C44C2300A09EFB /* DetailViews */,
 				8DF63C5B29C4445400A09EFB /* List1View.swift */,
 				8DF63C5D29C445E400A09EFB /* List2View.swift */,
 				8DF63C5F29C445F200A09EFB /* List3View.swift */,
 				8DF63C6129C445FF00A09EFB /* List4View.swift */,
+				8DF63C6329C44C2300A09EFB /* DetailViews */,
 			);
 			path = ListViews;
 			sourceTree = "<group>";

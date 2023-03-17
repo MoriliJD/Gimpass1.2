@@ -10,7 +10,6 @@ import SwiftUI
 struct HomeTabView: View {
     var body: some View {
         TabView {
-            
             FeaturedView()
                 .tabItem {
                     VStack {
@@ -18,7 +17,6 @@ struct HomeTabView: View {
                         Text("Home")
                     }
                 }
-            
            ListView()
                 .tabItem {
                     VStack {
@@ -29,7 +27,6 @@ struct HomeTabView: View {
         }
     }
 }
-
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         HomeTabView()
