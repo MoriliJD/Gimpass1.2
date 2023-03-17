@@ -15,155 +15,173 @@ struct ListView: View {
                     Spacer()
                     Text(" ")
                     // MARK: List1
-                    
-                    ZStack {
-                        Rectangle()
-                            .foregroundColor(.white)
-                            .cornerRadius(10)
-                            .shadow(radius: 5)
-                            .aspectRatio(CGSize(width: 350, height: 130), contentMode: .fit)
-                            .padding(.horizontal)
-                        
-                        HStack {
-                            // Image
+                    NavigationLink {
+                        List1View()
+                    } label: {
+                        ZStack {
+                            Rectangle()
+                                .foregroundColor(.white)
+                                .cornerRadius(10)
+                                .shadow(radius: 5)
+                                .aspectRatio(CGSize(width: 350, height: 130), contentMode: .fit)
+                                .padding(.horizontal)
                             
-                            Image("CPIMG1")
-                                .resizable()
-                                .frame(width: 116.0, height: 116)
-                                .clipShape(Circle())
-                            
-                            // Text
-                            VStack (alignment: .leading, spacing: 10) {
+                            HStack {
+                                // Image
                                 
-                                // Headline
-                                Text("Theories ")
-                                    .bold()
-                                // Description
-                                Text("three theories of giftedness")
-                                    .padding(.bottom, 20)
-                                    .font(.caption)
+                                Image("CPIMG1")
+                                    .resizable()
+                                    .frame(width: 116.0, height: 116)
+                                    .clipShape(Circle())
                                 
+                                // Text
+                                VStack (alignment: .leading, spacing: 10) {
+                                    
+                                    // Headline
+                                    Text("Theories ")
+                                        .bold()
+                                    // Description
+                                    Text("three theories of giftedness")
+                                        .padding(.bottom, 20)
+                                        .font(.caption)
+                                    
+                                }
+                                .frame(width: 150, height: 100)
+                                .padding(.leading)
                             }
-                            .frame(width: 150, height: 100)
-                            .padding(.leading)
+                            .padding(.horizontal, 20)
+                            
                         }
-                        .padding(.horizontal, 20)
-                        
+                        .foregroundColor(.black)
                     }
                     Text(" ")
                         .font(.caption)
                     // MARK: List2
-                    ZStack {
-                        Rectangle()
-                            .foregroundColor(.white)
-                            .cornerRadius(10)
-                            .shadow(radius: 5)
-                            .aspectRatio(CGSize(width: 350, height: 130), contentMode: .fit)
-                            .padding(.horizontal)
-                        
-                        HStack {
-                            // Image
+                    NavigationLink {
+                        List2View()
+                    } label: {
+                        ZStack {
+                            Rectangle()
+                                .foregroundColor(.white)
+                                .cornerRadius(10)
+                                .shadow(radius: 5)
+                                .aspectRatio(CGSize(width: 350, height: 130), contentMode: .fit)
+                                .padding(.horizontal)
                             
-                            Image("CPIMG2")
-                                .resizable()
-                                .frame(width: 116.0, height: 116)
-                                .clipShape(Circle())
-                            
-                            // Text
-                            VStack (alignment: .leading, spacing: 10) {
+                            HStack {
+                                // Image
                                 
-                                // Headline
-                                Text("Identification")
-                                    .bold()
-                                // Description
-                                Text("How to identify gifted students and gifted behavior")
-                                    .padding(.bottom, 20)
-                                    .font(.caption)
+                                Image("CPIMG2")
+                                    .resizable()
+                                    .frame(width: 116.0, height: 116)
+                                    .clipShape(Circle())
                                 
+                                // Text
+                                VStack (alignment: .leading, spacing: 10) {
+                                    
+                                    // Headline
+                                    Text("Identification")
+                                        .bold()
+                                    // Description
+                                    Text("How to identify gifted students and gifted behavior")
+                                        .padding(.bottom, 20)
+                                        .font(.caption)
+                                    
+                                }
+                                .frame(width: 150, height: 100)
+                                .padding(.leading)
                             }
-                            .frame(width: 150, height: 100)
-                            .padding(.leading)
+                            .padding(.horizontal, 20)
+                            
                         }
-                        .padding(.horizontal, 20)
-                        
+                        .foregroundColor(.black)
                     }
                     Text(" ")
                         .font(.caption)
                     // MARK: List3
-                    ZStack {
-                        Rectangle()
-                            .foregroundColor(.white)
-                            .cornerRadius(10)
-                            .shadow(radius: 5)
-                            .aspectRatio(CGSize(width: 350, height: 130), contentMode: .fit)
-                            .padding(.horizontal)
-                        
-                        HStack {
-                            // Image
+                    NavigationLink {
+                        List3View()
+                    } label: {
+                        ZStack {
+                            Rectangle()
+                                .foregroundColor(.white)
+                                .cornerRadius(10)
+                                .shadow(radius: 5)
+                                .aspectRatio(CGSize(width: 350, height: 130), contentMode: .fit)
+                                .padding(.horizontal)
                             
-                            Image("CPIMG3")
-                                .resizable()
-                                .frame(width: 116.0, height: 116)
-                                .clipShape(Circle())
-                            
-                            // Text
-                            VStack (alignment: .leading, spacing: 10) {
+                            HStack {
+                                // Image
                                 
-                                // Headline
-                                Text("Special Needs")
-                                    .bold()
-                                // Description
-                                Text("How to meet gifted students needs")
-                                    .padding(.bottom, 20)
-                                    .font(.caption)
+                                Image("CPIMG3")
+                                    .resizable()
+                                    .frame(width: 116.0, height: 116)
+                                    .clipShape(Circle())
                                 
+                                // Text
+                                VStack (alignment: .leading, spacing: 10) {
+                                    
+                                    // Headline
+                                    Text("Special Needs")
+                                        .bold()
+                                    // Description
+                                    Text("How to meet gifted students needs")
+                                        .padding(.bottom, 20)
+                                        .font(.caption)
+                                    
+                                }
+                                .frame(width: 150, height: 100)
+                                .padding(.leading, 20)
                             }
-                            .frame(width: 150, height: 100)
-                            .padding(.leading, 20)
+                            .padding(.horizontal, 20)
+                            
                         }
-                        .padding(.horizontal, 20)
-                        
+                        .foregroundColor(.black)
                     }
+
                     Text(" ")
                         .font(.caption)
                     // MARK: List4
-                    ZStack {
-                        Rectangle()
-                            .foregroundColor(.white)
-                            .cornerRadius(10)
-                            .shadow(radius: 5)
-                            .aspectRatio(CGSize(width: 350, height: 130), contentMode: .fit)
-                            .padding(.horizontal)
-                        
-                        HStack {
-                            // Image
+                    NavigationLink {
+                        List4View()
+                    } label: {
+                        ZStack {
+                            Rectangle()
+                                .foregroundColor(.white)
+                                .cornerRadius(10)
+                                .shadow(radius: 5)
+                                .aspectRatio(CGSize(width: 350, height: 130), contentMode: .fit)
+                                .padding(.horizontal)
                             
-                            Image("CPIMG0")
-                                .resizable()
-                                .frame(width: 116.0, height: 116)
-                                .clipShape(Circle())
-                            
-                            // Text
-                            VStack (alignment: .leading, spacing: 10) {
+                            HStack {
+                                // Image
                                 
-                                // Headline
-                                Text("Motivation")
-                                    .bold()
-                                // Description
-                                Text("How to motivate gifted students")
-                                    .padding(.bottom, 20)
-                                    .font(.caption)
+                                Image("CPIMG0")
+                                    .resizable()
+                                    .frame(width: 116.0, height: 116)
+                                    .clipShape(Circle())
                                 
+                                // Text
+                                VStack (alignment: .leading, spacing: 10) {
+                                    
+                                    // Headline
+                                    Text("Motivation")
+                                        .bold()
+                                    // Description
+                                    Text("How to motivate gifted students")
+                                        .padding(.bottom, 20)
+                                        .font(.caption)
+                                    
+                                }
+                                .frame(width: 150, height: 100)
+                                .padding(.leading, 20)
                             }
-                            .frame(width: 150, height: 100)
-                            .padding(.leading, 20)
+                            .padding(.horizontal, 20)
+                            
                         }
-                        .padding(.horizontal, 20)
-                        
+                        .foregroundColor(.black)
                     }
-                
                 }
-                
             }
         }
     }
