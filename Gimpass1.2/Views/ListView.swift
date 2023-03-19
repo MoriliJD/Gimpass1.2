@@ -32,7 +32,6 @@ struct ListView: View {
                                 .shadow(radius: 5)
                                 .aspectRatio(CGSize(width: 350, height: 130), contentMode: .fit)
                                 .padding(.horizontal)
-                            
                             HStack {
                                 // Image
                                 
@@ -45,14 +44,14 @@ struct ListView: View {
                                 VStack (alignment: .leading, spacing: 10) {
                                     
                                     // Headline
-                                    Text("Theories ")
+                                    Text("Theories")
                                         .bold()
                                     // Description
                                     Text("- three theories of giftedness")
                                         .multilineTextAlignment(.leading)
                                         .padding(.bottom, 20)
                                         .font(.caption)
-                                    
+                                   
                                 }
                                 .frame(width: 150, height: 100)
                                 .padding(.leading)
